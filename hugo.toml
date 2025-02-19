@@ -1,0 +1,54 @@
+baseURL = 'https://xiaoella2025.github.io/'
+languageCode = 'zh-cn'
+title = '夏天的自媒体博客'
+theme = 'hugo-theme-stack'
+
+# 主题配置
+[params]
+    mainSections = ['post']
+    featuredImageField = 'image'
+    rssFullContent = true
+    favicon = '/favicon.ico'
+
+    [params.footer]
+        since = 2024
+        customText = '夏天的自媒体博客'
+
+    [params.dateFormat]
+        published = "2006-01-02"
+        lastUpdated = "2006-01-02 15:04 MST"
+
+    [params.sidebar]
+        emoji = "🌞"
+        subtitle = "分享技术与生活的点点滴滴"
+
+    [params.sidebar.avatar]
+        enabled = true
+        local = true
+        src = "/img/avatar.png"
+
+[menu]
+    [[menu.main]]
+        identifier = "home"
+        name = "首页"
+        url = "/"
+        weight = -100
+        pre = "home"
+
+    [[menu.main]]
+        identifier = "about"
+        name = "关于"
+        url = "/about"
+        weight = -90
+        pre = "user"
+
+    [[menu.main]]
+        identifier = "archives"
+        name = "归档"
+        url = "/archives"
+        weight = -70
+        pre = "archives"
+
+# 搜索功能
+[params.search]
+    enable = true
